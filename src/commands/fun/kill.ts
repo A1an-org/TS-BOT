@@ -2,7 +2,7 @@
 import { ICommand } from 'wokcommands'
 import { MessageEmbed } from 'discord.js'
 export default {
-  category: 'Testing',
+  category: 'fun',
   description: 'Replies with kill', // Required for slash commands
   
   slash: 'both', // Create both a slash and legacy command
@@ -17,6 +17,7 @@ export default {
     .setTitle(`Killed a person`)
     .setColor(`#f3f3f3`)
     .setDescription(`${message.author.username} killed ${user.username}!`)
+
     // message is provided for a legacy command
     if (message) {
        
